@@ -1,0 +1,50 @@
+.main-content {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding-top: 100px;
+  gap: 50px;          
+}
+.main-body {
+  background-image: url("../images/background.webp");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  
+}
+.profile img{
+  height: 400px;
+}
+.right-content{
+  background-color: rgba(105, 101, 231, 0.167);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 60%;
+  gap: 50px;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.heading h1{
+  font-weight: bolder;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.content p{
+  font-size: larger;
+  font-weight: 500;
+}
