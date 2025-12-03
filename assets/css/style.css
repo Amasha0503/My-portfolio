@@ -1,50 +1,336 @@
-.main-content {
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  padding-top: 100px;
-  gap: 50px;          
+
+:root {
+  --primary: #883fd5;
+  --light-bg: #f4f8fb;
+  --feature-bg: #eaf0fa;
+  --text-dark: #291a3a;
 }
-.main-body {
-  background-image: url("../images/background.webp");
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat; 
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d1c0e37f 0%, #f2dff5 100%);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--text-dark);
+  padding-top: 70px;
 }
-.profile{
+
+/* ======================
+   Branding
+========================= */
+.brand-circle {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 32px;
+  border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 25%;
-  
+  justify-content: center;
+  box-shadow: 0 6px 30px 2px rgba(0,0,0,0.07);
 }
-.profile img{
-  height: 400px;
+.gradient-text {
+  background: linear-gradient(90deg,#850dfd 55%,#900a7c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-.right-content{
-  background-color: rgba(105, 101, 231, 0.167);
+
+
+/* ======================
+   Navbar
+========================= */
+/* Navbar Custom Styles */
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1040;
+}
+.brand{
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #651298;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #651298;
+  font-weight: 700;
+  margin-right: 20px;
+  transition: color 0.3s, background 0.3s;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+}
+
+/* Hover State */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary);
+  background: var(--feature-bg);
+}
+
+/* Active State (Bootstrap will add .active class) */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:active {
+  color: #fff !important;
+  background: var(--primary);
+}
+
+
+
+
+/* ======================
+   Section Headings & Dividers
+========================= */
+h2 {
+  color: var(--text-dark);
+}
+.border-primary {
+  border-color: var(--primary) !important;
+}
+.about-text {
+  color: var(--text-dark);
+  font-size: 1.15rem;
+}
+
+/* ======================
+   About Section
+========================= */
+#about {
+  background: var(--light-bg);
+}
+.feature-card {
+  background: var(--feature-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,32,128,0.06);
+}
+.feature-icon {
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+/* ======================
+   Skills Section
+========================= */
+.skills-section {
+  background: var(--light-bg);
+}
+.skill-card {
+  background: var(--feature-bg);
+  border-radius: 20px;
+  min-height: 340px;
+  box-shadow: 0 4px 16px rgba(98, 0, 128, 0.06);
+  transition: box-shadow .2s;
+}
+.skill-card:hover {
+  box-shadow: 0 8px 24px rgba(94, 0, 128, 0.13);
+}
+.card-icon {
+  color: var(--primary);
+  background: #dde6f6;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+}
+.skill-card .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* ======================
+   Projects Section
+========================= */
+.projects-section {
+  background: var(--light-bg);
+}
+.project-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,32,128,0.06);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  width: 60%;
-  gap: 50px;
+  height: 100%;
 }
-.heading{
-  display: flex;
-  justify-content: center;
+.project-card img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
-.heading h1{
-  font-weight: bolder;
+.project-title {
+  color: var(--text-dark);
 }
-.content{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.content p{
-  font-size: larger;
+.skill-badge {
+  background: var(--feature-bg);
+  color: var(--primary);
+  border-radius: 16px;
+  padding: 4px 16px;
+  font-size: 0.95rem;
   font-weight: 500;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+.project-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.project-link:hover {
+  color: var(--primary);
+}
+
+/* ======================
+   Experience & Education (Timeline)
+========================= */
+.experience-section {
+  background: var(--light-bg);
+}
+.timeline {
+  position: relative;
+  padding-left: 60px;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--feature-bg);
+  z-index: 0;
+  border-radius: 2px;
+}
+.timeline-entry {
+  position: relative;
+  min-height: 120px;
+}
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 0 8px 24px rgba(0,32,128,0.07);
+  z-index: 2;
+}
+.timeline-card {
+  background: #fff;
+  border-radius: 16px;
+}
+.timeline-date {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* ======================
+   Contact Section
+========================= */
+.contact-section {
+  background: var(--light-bg);
+}
+a{
+  text-decoration: none;
+}
+.contact-list {
+  margin-top: 2rem;
+}
+.contact-list .contact-icon {
+  background: var(--feature-bg);
+  color: var(--primary);
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  min-height: 56px;
+}
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: #003360;
+  border-color: #003360;
+}
+.form-label {
+  color: var(--text-dark);
+}
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.10rem rgba(0, 64, 128, .1);
+}
+
+/* ======================
+   Footer
+========================= */
+.footer-section {
+  background: var(--text-dark);
+  color: #c8d2e1;
+  font-size: 1.02rem;
+  margin-top: 0;
+}
+.footer-section .bi-heart-fill {
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+
+/* ======================
+   Buttons/Utility
+========================= */
+.btn-grad {
+  background: linear-gradient(90deg,#850dfd 55%,#900a7c 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 16px rgba(13,110,253,0.14);
+}
+.btn-outline-grad {
+  border: 2px solid #850dfd;
+  color: #850dfd;
+  background: transparent;
+  transition: background 0.3s, color 0.3s;
+}
+.btn-outline-grad:hover {
+  background: linear-gradient(90deg,#850dfd 55%,#900a7c 100%);
+  color: #fff;
+  border-color: #850dfd;
+}
+
+/* ======================
+   Media Queries
+========================= */
+/* Branding (smaller circle), Bolt badge, h2 */
+@media (max-width: 700px) {
+  .brand{ font-size: 1rem; }
+  .brand-circle { width: 80px; height: 80px; font-size: 30px; }
+  .display-3 { font-size: 2.2rem; }
+}
+
+/* Feature cards/coding skills/projects on tablets/small screens */
+@media (max-width: 991px) {
+  .feature-card { margin-bottom: 1.5rem; }
+  .skill-card { min-height: 0; margin-bottom: 1.5rem; }
+  .project-card img { height: 180px; }
+}
+
+/* Card and timeline icons on mobile */
+@media (max-width: 767px) {
+  .card-icon { width: 38px; height: 38px; padding: 6px; }
+  .timeline { padding-left: 0; }
+  .timeline-entry { flex-direction: column; align-items: flex-start; }
+  .timeline-icon { position: static; margin-bottom: 20px; }
+  .timeline:before { display: none; }
+  .footer-section .text-md-start,
+  .footer-section .text-md-end { text-align: center !important; }
 }

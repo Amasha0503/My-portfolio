@@ -4,51 +4,520 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body class="main-body">
-    <div class="container">
-        <header class="d-flex justify-content-center py-3">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="experiance.html" class="nav-link">Experiance</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </header>
-    </div>
-    <div class="main-content">
-        <div class="profile">
-            <img src="assets/images/myPhoto.jpg" alt="profile picture">
-        </div>
-        <div class="right-content">
-            <div class="heading">
-                <h1>Hey! I'm Amasha Malindi,</h1>
-            </div>
-            <div class="content">
-                <p>a dedicated and enthusiastic second-year undergraduate specializing Information Systems in University
-                    of Sri Jayewardenapura.
-                    I have a strong passion for technology, problem-solving, and building meaningful digital solutions.
-                    I enjoy learning new tools, improving my skills, and turning ideas into practical projects. My goal
-                    is to continuously grow as a learner while contributing to impactful and creative tech work.</p>
-            </div>
-        </div>
-    </div>
+<body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand brand" href="index.html">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main hero section -->
+    <main>
+        <div class="container">
+            <div class="row justify-content-center mt-4 py-5">
+                <div class="col-lg-8 text-center">
+                    <div class="brand-circle mb-3">
+                        <img src="assets/images/3p copy - Copy.JPG" alt="my photo" class="rounded-circle w-100 h-100 object-fit-cover">
+                    </div>
+                    <h1 class="display-3 fw-bold mb-3">
+                        Hello, I'm <span class="gradient-text">Amasha Malindi</span>
+                    </h1>
+                    <h3 class="fw-normal mb-3 text-secondary">IS Undergraduate | Ready to Learn, Ready to Engage.</h3>
+                    <p class="lead text-secondary mb-5">
+                        Passionate about learning, building, and creating impact through technology.
+                        Always exploring new opportunities to grow and contribute.
+                    </p>
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="#contact" class="btn btn-grad px-4 py-2 fs-5 shadow-sm">Get in Touch</a>
+                        <a href="#projects" class="btn btn-outline-grad px-4 py-2 fs-5">
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- About Me Section -->
+    <section id="about" class="container py-5">
+        <h1 class="text-center fw-bold mb-3">About Me</h1>
+        <div class="d-flex justify-content-center">
+            <div class="border-bottom border-3 border-primary mb-4" style="width: 80px;"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <p class="about-text">
+                    I am a motivated Information Systems undergraduate with a strong passion for technology and
+                    continuous learning.
+                    I am focused on bridging the gap between business strategy and technology implementation.<br><br>
+
+                    I actively develop my skills and gain hands-on experience through academic coursework,
+                    extracurricular involvement and collaborative projects.
+
+                    I am committed to both personal and professional growth and am always eager to explore new
+                    opportunities where I can apply my theoretical knowledge and contribute tangible results.
+                    <br><br>
+                    I believe impactful work is built on strong relationships. I am committed to building meaningful
+                    connections with peers and professionals to share knowledge, exchange ideas, and contribute to
+                    impactful work in the tech space.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-card mb-4 p-4 d-flex align-items-start shadow-sm">
+                    <div class="feature-icon me-3">
+                        <!-- Book icon (Bootstrap Icon) -->
+                       <i class="bi bi-book"></i>                    
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Continuous Learner</h5>
+                        <p class="mb-0 small">Dedicated to expanding knowledge through courses, projects, and hands-on
+                            experience.</p>
+                    </div>
+                </div>
+                <div class="feature-card mb-4 p-4 d-flex align-items-start shadow-sm">
+                    <div class="feature-icon me-3">
+                        <!-- Bullseye icon (Bootstrap Icon) -->
+                        <i class="bi bi-bullseye"></i>                    
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Goal-Oriented</h5>
+                        <p class="mb-0 small">Focused on achieving objectives with determination and strategic planning.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-card mb-4 p-4 d-flex align-items-start shadow-sm">
+                    <div class="feature-icon me-3">
+                        <!-- Bullseye icon (Bootstrap Icon) -->
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-1">Community Builder</h5>
+                        <p class="mb-0 small">Driven to connect with industry peers and experts to exchange ideas and enhance collective contribution to the field.
+                        </p>
+                    </div>
+                </div>
+                <!-- Add more feature cards if needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise Section -->
+    <section id="skills" class="container py-5 skills-section">
+        <h1 class="text-center fw-bold mb-3">Skills & Expertise</h1>
+        <div class="d-flex justify-content-center">
+            <div class="border-bottom border-3 border-primary mb-4" style="width: 110px;"></div>
+        </div>
+        <p class="text-center about-text mb-5">A comprehensive set of skills gained through academic learning and
+            hands-on projects</p>
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+
+                <!-- Programming Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card p-4 h-100 d-flex flex-column align-items-start shadow-sm">
+                        <div class="card-icon mb-3">
+                            <i class="bi bi-code-slash display-6 "></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Programming</h5>
+                        <ul class="list-unstyled">
+                            <li><span class="dot"></span> Java</li>
+                            <li><span class="dot"></span> JavaScript</li> 
+                            <li><span class="dot"></span> C++</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Web Development Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card p-4 h-100 d-flex flex-column align-items-start shadow-sm">
+                        <div class="card-icon mb-3">
+                            <i class="bi bi-palette display-6 "></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Web Development</h5>
+                        <ul class="list-unstyled">  
+                            <li><span class="dot"></span> HTML/CSS</li>
+                            <li><span class="dot"></span> Tailwind</li>
+                            <li><span class="dot"></span> Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card p-4 h-100 d-flex flex-column align-items-start shadow-sm">
+                        <div class="card-icon mb-3">
+                            <i class="bi bi-hdd-network display-6 "></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Tools & Technologies</h5>
+                        <ul class="list-unstyled">
+                            <li><span class="dot"></span> Git</li>
+                            <li><span class="dot"></span> VS Code</li>
+                            <li><span class="dot"></span> Linux</li>
+                            <li><span class="dot"></span> SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Soft Skills Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card p-4 h-100 d-flex flex-column align-items-start shadow-sm">
+                        <div class="card-icon mb-3">
+                            <i class="bi bi-lightbulb display-6 "></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Soft Skills</h5>
+                        <ul class="list-unstyled">
+                            <li><span class="dot"></span>Problem Solving</li>
+                            <li><span class="dot"></span>Team Collaboration</li>
+                            <li><span class="dot"></span>Communication</li>
+                            <li><span class="dot"></span>Time Management</li>
+                            <li><span class="dot"></span>Adaptability</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5 projects-section">
+        <h1 class="text-center fw-bold mb-3">Projects</h1>
+        <div class="d-flex justify-content-center">
+            <div class="border-bottom border-3 border-primary mb-4" style="width: 90px;"></div>
+        </div>
+        <p class="text-center about-text mb-5">
+            A showcase of my work and personal projects that demonstrate my skills and passion
+        </p>
+        <div class="container">
+            <div class="row justify-content-center gy-4">
+
+                <!-- Project Card 1 -->
+                <div class="col-md-4 col-lg-4">
+                    <div class="project-card h-100 shadow-sm">
+                        <img src="assets/images/burgerShop.png"
+                            class="img-fluid rounded-top" alt="Java POS System">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2 project-title">Java POS System</h4>
+                            <p class="mb-3 text-muted"> 
+                                A Point of Sale (POS) system for small burger selling businesses to manage orders and customer data.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge skill-badge">Java</span>
+                                <span class="badge skill-badge">OOP</span>
+                                <span class="badge skill-badge">Java Swing</span>
+                                <span class="badge skill-badge">DSA</span>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Amasha0503/iHungryBurgerShop.git" class="me-3 text-decoration-none project-link">
+                                    <i class="bi bi-github"></i> Code
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-4 col-lg-4">
+                    <div class="project-card h-100 shadow-sm">
+                        <img src="assets/images/chat.png"
+                            class="img-fluid rounded-top" alt="chat application">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2 project-title">Chat-Application</h4>
+                            <p class="mb-3 text-muted">
+                                A real-time chat application enabling users to communicate instantly using java oop concepts.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge skill-badge">Java</span>
+                                <span class="badge skill-badge">OOP</span>
+                                <span class="badge skill-badge">Java Swing</span>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Amasha0503/chat-application.git" class="me-3 text-decoration-none project-link">
+                                    <i class="bi bi-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="project-card h-100 shadow-sm">
+                        <img src="assets/images/movie.png"
+                            class="img-fluid rounded-top" alt="movie-api">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2 project-title">Movie API Platform</h4>
+                            <p class="mb-3 text-muted">
+                                Fully responsive movie information platform that allows users to browse and search for movies.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge skill-badge">HTML</span>
+                                <span class="badge skill-badge">CSS</span>
+                                <span class="badge skill-badge">JavaScript</span>
+                                <span class="badge skill-badge">Bootstrap</span>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Amasha0503/Movie_application.git" class="me-3 text-decoration-none project-link">
+                                    <i class="bi bi-github"></i> Code
+                                </a>
+                                <a href="https://amasha0503.github.io/Movie_application/" class="text-decoration-none project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="project-card h-100 shadow-sm">
+                        <img src="assets/images/Screenshot 2025-12-03 180331.png"
+                            class="img-fluid rounded-top" alt="my portfolio website">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2 project-title">Personal Portfolio Website</h4>
+                            <p class="mb-3 text-muted">
+                                A responsive portfolio website to showcase my projects, skills and experience.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge skill-badge">HTML</span>
+                                <span class="badge skill-badge">CSS</span>
+                                <span class="badge skill-badge">JavaScript</span>
+                                <span class="badge skill-badge">Bootstrap</span>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Amasha0503/My-portfolio.git" class="me-3 text-decoration-none project-link">
+                                    <i class="bi bi-github"></i> Code
+                                </a>
+                                <a href="#" class="text-decoration-none project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="project-card h-100 shadow-sm">
+                        <img src="assets/images/pos.png"
+                            class="img-fluid rounded-top" alt="POS-system">
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2 project-title">Web based POS System</h4>
+                            <p class="mb-3 text-muted">
+                                A web-based Point of Sale (POS) system for food businesses to manage sales, customers and inventory.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge skill-badge">HTML</span>
+                                <span class="badge skill-badge">CSS</span>
+                                <span class="badge skill-badge">JavaScript</span>
+                                <span class="badge skill-badge">Bootstrap</span>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Amasha0503/Grill_Master-POS-System.git" class="me-3 text-decoration-none project-link">
+                                    <i class="bi bi-github"></i> Code
+                                </a>
+                                <a href="https://amasha0503.github.io/Grill_Master-POS-System/" class="text-decoration-none project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more project cards as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="container py-5 experience-section">
+        <h1 class="text-center fw-bold mb-3">Experience & Education</h1>
+        <div class="d-flex justify-content-center">
+            <div class="border-bottom border-3 border-primary mb-4" style="width: 140px;"></div>
+        </div>
+        <p class="text-center about-text mb-5">
+            My academic journey and professional experiences that have shaped my growth
+        </p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="timeline">
+
+                        <!-- Timeline Entry 1 -->
+                        <div class="timeline-entry d-flex align-items-center mb-5">
+                            <div class="timeline-icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-mortarboard"></i>
+                            </div>
+                            <div class="timeline-content flex-grow-1 ms-5">
+                                <div class="card shadow-sm p-4 border-0 timeline-card">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">Bachelor of Computing Honours in Information Systems</h5>
+                                        <span class="timeline-date">2024 - Present</span>
+                                    </div>
+                                    <div class="mb-1 fw-semibold">University of Sri Jayewardenepura</div>
+                                    <div class="text-muted">
+                                        Pursuing a degree with focus on Information Systems, learning about
+                                        system analysis, database management, and IT project management.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Entry 2 -->
+                        <div class="timeline-entry d-flex align-items-center mb-5">
+                            <div class="timeline-icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-mortarboard"></i>
+                            </div>
+                            <div class="timeline-content flex-grow-1 ms-5">
+                                <div class="card shadow-sm p-4 border-0 timeline-card">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">Software Engineering Diploma</h5>
+                                        <span class="timeline-date">2025 - present</span>
+                                    </div>
+                                    <div class="mb-1 fw-semibold">iCET</div>
+                                    <div class="text-muted">
+                                        Gained practical skills in software development, project management, and
+                                        teamwork through hands-on projects.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-entry d-flex align-items-center mb-5">
+                            <div class="timeline-icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <div class="timeline-content flex-grow-1 ms-5">
+                                <div class="card shadow-sm p-4 border-0 timeline-card">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">Advanced Course in English</h5>
+                                        <span class="timeline-date">2024</span>
+                                    </div>
+                                    <div class="mb-1 fw-semibold">The Academy of English Studies</div>
+                                    <div class="text-muted">
+                                        Completed an advanced English course focusing on communication skills,
+                                        academic writing, and professional correspondence.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-entry d-flex align-items-center mb-5">
+                            <div class="timeline-icon d-flex align-items-center justify-content-center">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <div class="timeline-content flex-grow-1 ms-5">
+                                <div class="card shadow-sm p-4 border-0 timeline-card">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="fw-bold mb-0">G.C.E (A/L)</h5>
+                                        <span class="timeline-date">2022/23</span>
+                                    </div>
+                                    <div class="mb-1 fw-semibold">Taxila Central College</div>
+                                    <div class="text-muted">
+                                        ICT - A  |  Combined Maths - B |  Physics - S
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                
+
+                        <!-- Add more timeline entries as needed -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 contact-section">
+        <h1 class="text-center fw-bold mb-3">Get In Touch</h1>
+        <div class="d-flex justify-content-center">
+            <div class="border-bottom border-3 border-primary mb-4" style="width: 120px;"></div>
+        </div>
+        <p class="text-center about-text mb-5">I'm always open to discussing new opportunities, projects, or
+            collaborations</p>
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-5 mb-5 mb-md-0">
+                    <h4 class="fw-bold">Contact Information</h4>
+                    <p>Feel free to reach out through any of the following channels. I'll get back to you as soon as
+                        possible!</p>
+                    <ul class="list-unstyled contact-list">
+                        <li class="d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="bi bi-envelope display-6"></i>
+                            </div>
+                            <div>
+                                <span class="fw-bold d-block mb-1">Email</span>
+                                <a href="mailto:malindiamasha@gmail.com"><span class="text-muted">malindiamasha@gmail.com</span></a>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="bi bi-linkedin display-6"></i>
+                            </div>
+                            <div>
+                                <span class="fw-bold d-block mb-1">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/amasha-malindi-b5512b36a/"><span class="text-muted">Amasha Malindi</span></a>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="bi bi-github display-6"></i>
+                            </div>
+                            <div>
+                                <span class="fw-bold d-block mb-1">GitHub</span>
+                                <a href="https://github.com/Amasha0503"><span class="text-muted">Amasha Malindi</span></a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-4">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
+                    <span>&copy; 2025 Portfolio. Amasha Malindi.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
