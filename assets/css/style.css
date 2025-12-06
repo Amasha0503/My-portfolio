@@ -18,8 +18,8 @@ body {
    Branding
 ========================= */
 .brand-circle {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto 32px;
   border-radius: 50%;
   display: flex;
@@ -264,12 +264,8 @@ a{
   background-color: #003360;
   border-color: #003360;
 }
-.form-label {
-  color: var(--text-dark);
-}
-.form-control:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 0.10rem rgba(0, 64, 128, .1);
+.link :hover {
+  color: var(--primary);
 }
 
 /* ======================
