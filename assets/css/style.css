@@ -14,12 +14,11 @@ body {
   padding-top: 70px;
 }
 
-/* ======================
-   Branding
-========================= */
+/*  Branding  */
+
 .brand-circle {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto 32px;
   border-radius: 50%;
   display: flex;
@@ -35,10 +34,8 @@ body {
 }
 
 
-/* ======================
-   Navbar
-========================= */
-/* Navbar Custom Styles */
+/*  Navbar  */
+
 .navbar.fixed-top {
   position: fixed;
   top: 0;
@@ -60,13 +57,11 @@ body {
   padding: 0.4rem 1rem;
 }
 
-/* Hover State */
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--primary);
   background: var(--feature-bg);
 }
 
-/* Active State (Bootstrap will add .active class) */
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:active {
   color: #fff !important;
@@ -76,9 +71,8 @@ body {
 
 
 
-/* ======================
-   Section Headings & Dividers
-========================= */
+/*  Section Headings  */
+
 h2 {
   color: var(--text-dark);
 }
@@ -90,9 +84,8 @@ h2 {
   font-size: 1.15rem;
 }
 
-/* ======================
-   About Section
-========================= */
+/*  About Section  */
+
 #about {
   background: var(--light-bg);
 }
@@ -106,9 +99,8 @@ h2 {
   font-size: 2.5rem;
 }
 
-/* ======================
-   Skills Section
-========================= */
+/*  Skills Section  */
+
 .skills-section {
   background: var(--light-bg);
 }
@@ -143,9 +135,8 @@ h2 {
   vertical-align: middle;
 }
 
-/* ======================
-   Projects Section
-========================= */
+/*  Projects Section  */
+
 .projects-section {
   background: var(--light-bg);
 }
@@ -186,9 +177,8 @@ h2 {
   color: var(--primary);
 }
 
-/* ======================
-   Experience & Education (Timeline)
-========================= */
+/*  Experience & Education  */
+
 .experience-section {
   background: var(--light-bg);
 }
@@ -233,9 +223,8 @@ h2 {
   font-size: 1rem;
 }
 
-/* ======================
-   Contact Section
-========================= */
+/*  Contact Section  */
+
 .contact-section {
   background: var(--light-bg);
 }
@@ -268,9 +257,8 @@ a{
   color: var(--primary);
 }
 
-/* ======================
-   Footer
-========================= */
+/*  Footer  */
+
 .footer-section {
   background: var(--text-dark);
   color: #c8d2e1;
@@ -282,9 +270,8 @@ a{
   margin: 0 0.2em;
 }
 
-/* ======================
-   Buttons/Utility
-========================= */
+/*  Buttons/Utility */
+
 .btn-grad {
   background: linear-gradient(90deg,#850dfd 55%,#900a7c 100%);
   color: white;
@@ -303,24 +290,23 @@ a{
   border-color: #850dfd;
 }
 
-/* ======================
-   Media Queries
-========================= */
-/* Branding (smaller circle), Bolt badge, h2 */
+
+
+
 @media (max-width: 700px) {
   .brand{ font-size: 1rem; }
-  .brand-circle { width: 80px; height: 80px; font-size: 30px; }
+  .brand-circle { width: 180px; height: 180px;}
   .display-3 { font-size: 2.2rem; }
 }
 
-/* Feature cards/coding skills/projects on tablets/small screens */
+
 @media (max-width: 991px) {
   .feature-card { margin-bottom: 1.5rem; }
   .skill-card { min-height: 0; margin-bottom: 1.5rem; }
   .project-card img { height: 180px; }
 }
 
-/* Card and timeline icons on mobile */
+
 @media (max-width: 767px) {
   .card-icon { width: 38px; height: 38px; padding: 6px; }
   .timeline { padding-left: 0; }
